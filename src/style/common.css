@@ -1,0 +1,11 @@
+.user-icon {
+  color: #007bff;       /* Blue color */
+  width: 30px;      /* Bigger icon */
+  margin-right: 10px;   /* Space after icon */
+  transition: transform 0.2s ease;
+}
+
+.user-icon:hover {
+  transform: scale(1.1);
+  color: #0056b3;
+}

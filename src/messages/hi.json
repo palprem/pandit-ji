@@ -1,0 +1,48 @@
+{
+  "Navbar": {
+    "home": "होम",
+    "our_puja": "हमारी पूजा",
+    "vastu": "वास्तु",
+    "gau_seva": "गौ सेवा",
+    "about": "हमारे बारे में",
+    "contact": "हमसे संपर्क करें",
+    "gallery": "गैलरी",
+    "user_name": "नमस्ते, "
+  },
+  "input": {
+    "email_phone": "ईमेल आईडी या फ़ोन नंबर",
+    "psd": "पासवर्ड",
+    "confirm_psd": "अपना पासवर्ड दोहराएँ",
+    "first_name": "पहला नाम",
+    "last_name": "अंतिम नाम",
+    "email": "ईमेल आईडी",
+    "contact_num": "मोबाइल नंबर"
+  },
+  "buttons": {
+    "register": "रजिस्टर करें",
+    "donate": "हमें दान करें",
+    "login": "लॉग इन करें",
+    "logout": "लॉग आउट"
+  },
+  "HomePage": {
+    "title": "वैदिक अनुष्ठान केंद्र-आचार्य राजा शास्त्री में आपका स्वागत है",
+    "subTitle": "काशी के हृदय से सेवा की कालातीत बुद्धि और ऊर्जा का अनुभव करें",
+    "serviceTitle": "हमारी सेवाएँ"
+  },
+  "labels": {
+    "mahadev_puja": "महादेव पूजा",
+    "devi_puja": "देवी पूजा",
+    "hanuman_puja": "हनुमान पूजा",
+    "kashi_puja": "काशी विशेष पूजा",
+    "pitra_puja": "पितृ शांति पूजा",
+    "ganesh_puja": "गणेश पूजा",
+    "bhairav_puja": "काल भैरव पूजा",
+    "residential_vastu": "आवासीय वास्तु",
+    "commercial_vastu": "वाणिज्यिक वास्तु",
+    "industrial_vastu": "औद्योगिक वास्तु",
+    "vastu_vivaran": "वास्तु निवारण",
+    "kundali": "कुंडली",
+    "couple_kundli": "युगल मिलान कुंडली",
+    "baby_name_report": "शिशु नाम रिपोर्ट"
+  }
+}

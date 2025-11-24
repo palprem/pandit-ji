@@ -1,0 +1,26 @@
+.carousel-img {
+  width: 48lvw;
+  height: 50lvh;
+}
+
+
+@media (max-width: 600px) {
+
+  /* md */
+  .carousel-img {
+    height: 40vh;
+    width: 100lvh;
+  }
+
+}
+
+@media (max-width: 985px) {
+  .carousel-img {
+    width: 100lvw;
+    height: 30lvh;
+  }
+
+}
+
+
+

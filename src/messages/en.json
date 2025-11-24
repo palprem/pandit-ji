@@ -1,0 +1,48 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "our_puja": "Our Puja",
+    "vastu": "Vastu",
+    "gau_seva": "Gau Seva",
+    "about": "About Us",
+    "contact": "Conatct Us",
+    "gallery": "Gallery",
+    "user_name": "Hello, "
+  },
+  "input": {
+    "email_phone": "Email id or Phone number",
+    "psd": "Password",
+    "confirm_psd": "Repeat your password",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "email": "Email Id",
+    "contact_num": "Contact Number"
+  },
+  "buttons": {
+    "login": "Login",
+    "logout": "Sign Out",
+    "register": "Register",
+    "donate": "Donate Us"
+  },
+  "HomePage": {
+    "title": "Welcome To Vaidik Anushthan Kendra- Acharya Raja Shastri",
+    "subTitle": "Experience the Timeless Wisdom of Seva and Energy from the Heart of Kashi",
+    "serviceTitle": "Our Services"
+  },
+  "labels": {
+    "mahadev_puja": "Mahadev Puja",
+    "devi_puja": "Devi Puja",
+    "hanuman_puja": "Hanuman Puja",
+    "kashi_puja": "Kashi Special Puja",
+    "pitra_puja": "Pitra Shanti Puja",
+    "ganesh_puja": "Ganesh Puja",
+    "bhairav_puja": "Kaal Bhairav Puja",
+    "residential_vastu": "Residential Vastu",
+    "commercial_vastu": "Commercial Vastu",
+    "industrial_vastu": "Industrial Vastu",
+    "vastu_vivaran": "Vastu Nivaran",
+    "kundali": "Kundali",
+    "couple_kundli": "Couple Matching Kundli",
+    "baby_name_report": "Baby Name Report"
+  }
+}
