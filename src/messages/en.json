@@ -1,6 +1,6 @@
 {
   "global": {
-    "name": "Vedic Jyotish, Vastu & Anusthan Kendra – Acharya Gopal Sharan Pandey Ji (Pandit Raja Shastri Ji)"
+    "name": "Kashi Vishwanath Vedic Jyotish, Vastu & Anusthan Kendra – Acharya Gopal Sharan Pandey Ji (Pandit Raja Shastri Ji)"
   },
   "Navbar": {
     "home": "Home",
@@ -31,7 +31,7 @@
   },
   "HomePage": {
     "title": "Welcome To ",
-    "subTitle": "Experience the Timeless Wisdom of Seva and Energy from the Heart of Kashi",
+    "subTitle": "Feel the eternal spirit of selfless service and divine energy flowing from the sacred land of Kashi.",
     "serviceTitle": "Our Services"
   },
   "HomePageCaroselTitle": {
@@ -81,13 +81,17 @@
   "gau_seva": {
     "title": "A Compassionate Support System for Injured and Abandoned Cows",
     "subTitle": "Committed to saving and serving Gau Mata and other helpless animals by providing treatment, shelter and care.",
-    "1_care":"Animal Rescue & Medical Care",
-    "1_care_details":"Round-the-clock medical treatment and emergency assistance for injured and ill cows.",
-    "2_care":"Cow Shelter & Rehabilitation",
-    "2_care_details":"Round-the-clock medical treatment and emergency assistance for injured and ill cows.",
-    "3_care":"Awareness & Education Programs",
-    "3_care_details":"Spreading awareness among communities about animal welfare and the importance of timely."
-
+    "1_care": "Animal Rescue & Medical Care",
+    "1_care_details": "Round-the-clock medical treatment and emergency assistance for injured and ill cows.",
+    "2_care": "Cow Shelter & Rehabilitation",
+    "2_care_details": "Round-the-clock medical treatment and emergency assistance for injured and ill cows.",
+    "3_care": "Awareness & Education Programs",
+    "3_care_details": "Spreading awareness among communities about animal welfare and the importance of timely.",
+    "animal": "A Sanctuary for Stray & Injured Animals",
+    "animal_title": "Devotion & Service",
+    "animal_details":"Pandit Raja Shastri Ji has been devotedly engaged in Gau Seva for over 20 years. With deep faith and compassion, he has dedicated his life to the protection, care, and welfare of cows. Through his continuous efforts, injured, abandoned, and sick cows receive timely medical treatment, proper nourishment, and a safe shelter. His long-standing service reflects true selfless dedication, spiritual values, and a strong commitment to preserving India’s sacred tradition of Gau Seva.",
+    "24":"24/7 Animal Rescue & Medical Care State-of-the-art Veterinary Facilities Community Outreach for Animal Welfare"
+  
   },
   "serviceCards": {
     "serviceTitle": "Our Services",
@@ -110,7 +114,7 @@
     "sanskar_details": "Sacred performance of all Shodasha Sanskar as per Vedic traditions, guiding every stage of life with purity, dharma, blessings, spiritual upliftment, divine protection, positive karma, family harmony, and lifelong well-being."
   },
   "events": {
-    "title": "Events By Vedic Jyotish, Vastu & Anusthan Kendra – Acharya Gopal Sharan Pandey Ji (Pandit Raja Shastri Ji)",
+    "title": "Events By Kashi Vishwanath Vedic Jyotish, Vastu & Anusthan Kendra – Acharya Gopal Sharan Pandey Ji (Pandit Raja Shastri Ji)",
     "1_details": "Bageshwar Dham Siddhpeeth, Chhatarpur, Madhya Pradesh",
     "2_details": "Ramanand Vishwahit Karini Parisar, Shri Ram Janki Mandir, Kashmiri Ganj, Khojwa, Gurudham, Varanasi, Uttar Pradesh",
     "3_details": "Maha Lakshmi Yagya Poojan, Assi Ghat, Varanasi",
@@ -557,7 +561,16 @@
     "4": "Discipline and Moral Values",
     "4_": "Daily Pooja instills discipline, routine, and self-control. It encourages values such as patience, humility, respect, and gratitude. By following rituals regularly, individuals develop a structured lifestyle, ethical thinking, and a strong moral foundation that guides their actions in personal and social life."
   },
+  "forms":{
+    "title":"For Know More",
+    "1":"Full Name",
+    "2":"Contect Number",
+    "3":"Email Id",
+    "4":"Tell us what you want to talk about",
+    "5":"Submit"
+  },
   "footer": {
+    "social": "Conatct us social on media:",
     "add_1": "Naipura kalan, naipura khurd, tikri marg, varanasi – 221011",
     "add_2": "N-13/209, E2-Kedar nagar colony near upkar hospital, brijenclave, varanasi uttar pradesh - 221005",
     "phone_1": "+918542878714",

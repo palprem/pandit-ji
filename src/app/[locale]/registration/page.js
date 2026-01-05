@@ -70,7 +70,7 @@ function Registration() {
         <FormWrapper>
             <div className="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1 card shadow py-5">
 
-                <Title>Sign up</Title>
+                <Title className='text-center text-warning'>Sign up</Title>
 
                 <form className="mx-1 mx-md-3" onSubmit={(e) => handleFormSubmit(e)}>
 

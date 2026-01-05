@@ -4,7 +4,6 @@ import styles from "./page.module.css";
 import CardWrapper from "@/components/card/card-wrapper";
 import RowWrapper from '@/components/card/row-wrapper';
 import CardWithColumn from '@/components/card/card-with-column';
-import Carousel from '@/components/carousel/index';
 import CarouselWrapper from '@/components/carousel/carouselWrapper';
 import Image from '@/components/image';
 import SimpleCard from '@/components/card/simpleCard';
@@ -16,6 +15,7 @@ import { useTranslations } from 'next-intl';
 import { allSevices, chooseUs, homeCarosel, serviceCards } from '@/utils/homeConstant';
 import InfiniteScrollAnimation from '@/components/infiniteScroll';
 import { SubTitle, Title } from '@/components/typography/title';
+import Carousels from '@/components/carousel';
 
 
 export default function Home() {
@@ -23,14 +23,13 @@ export default function Home() {
   const s = useTranslations('serviceCards');
   const e = useTranslations('events');
   const c = useTranslations('chooseUs');
-  const g = useTranslations('global');
 
   return (
     <div className={styles.page + ' '} >
 
       <FormWrapper>
         <div className="col-md-10 col-lg-6 col-xl-7 col-12 order-2 order-lg-1 round-pill">
-          <Carousel images={homeCarosel}>
+          <Carousels images={homeCarosel}>
             {
               homeCarosel.map((item, i) => {
                 return <CarouselWrapper
@@ -41,7 +40,7 @@ export default function Home() {
                 </CarouselWrapper>
               })
             }
-          </Carousel>
+          </Carousels>
         </div>
 
         <div className=" col-md-10 col-lg-6 col-xl-5 col-12 d-flex align-items-center order-1 order-lg-2">

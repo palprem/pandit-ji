@@ -10,7 +10,7 @@ function Image({
     priority = false,
     className = "",
     fill = false,
-    ...rest
+    // ...rest
 }) {
     return (
         <NextImage
@@ -25,7 +25,7 @@ function Image({
             className={`img-fluid ${className}`}
             // placeholder="blur"
             // blurDataURL="/assets/placeholder.webp"
-            {...rest}
+            // {...rest}
         />
     );
 }

@@ -65,7 +65,7 @@ function Login() {
         <FormWrapper>
             <div className="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1 card shadow py-5">
 
-                <Title>{b('login')}</Title>
+                <Title className='text-center text-warning'>{b('login')}</Title>
 
                 <form className="mx-1 mx-md-4 " onSubmit={(e) => handleFormSubmit(e)}>
 
@@ -119,11 +119,11 @@ function Login() {
                         />
                     </div>
 
-                    <div className='text-center'>
+                    {/* <div className='text-center'>
                         <label className="form-check-label " htmlFor="form2Example3">
                             If you don&apos;t have account already? <Link href={selectedLangWithSlace + '/registration'}>Register</Link>
                         </label>
-                    </div>
+                    </div> */}
 
                 </form>
 

@@ -15,7 +15,6 @@ import { faEnvelope, faHouseChimney, faPhone } from '@fortawesome/free-solid-svg
 import KnowMore from '@/components/KnowMore'
 
 function GauSeva() {
-  const m = useTranslations('poojaBenifits');
   const f = useTranslations('footer');
   const g = useTranslations('gau_seva');
   const b = useTranslations('buttons');
@@ -26,6 +25,15 @@ function GauSeva() {
 
         <ContainerWapper>
           <RowWrapper>
+            <div className='col-md-6 col-12' >
+              <Image
+                loading='lazy'
+                decoding="async"
+                src="/assets/carousel/carousel-3.jpg"
+                alt="astrology image"
+                className="as-service-img img-responsive w-100 shadow" />
+            </div>
+
             <div className='col-md-6 col-12 py-5'>
               <div className='px-5'>
                 <Title>{g('title')}</Title>
@@ -54,14 +62,7 @@ function GauSeva() {
                 </Link>
               </div>
             </div>
-            <div className='col-md-6 col-12' >
-              <Image
-                loading='lazy'
-                decoding="async"
-                src="/assets/choose-us.jpg"
-                alt="astrology image"
-                className="as-service-img img-responsive w-100 shadow" />
-            </div>
+
           </RowWrapper>
         </ContainerWapper>
       </div>
@@ -92,7 +93,7 @@ function GauSeva() {
               <Image
                 loading='lazy'
                 decoding="async"
-                src="/assets/choose-us.jpg"
+                src="/assets/gau/4.png"
                 alt="astrology image"
                 className="as-service-img img-responsive  w-100 shadow" />
             </div>
@@ -100,9 +101,9 @@ function GauSeva() {
           <div className='col-md-6 col-12'>
             <div className='px-5'>
 
-              <SubTitle className='text-success'>{' hbh bhbb b hb hb hb hb h bhb h b '}</SubTitle>
-              <Title>{'A Lifeline For Injured & Abandoned Cows '}</Title>
-              <MutedText className='card-text '>{'Founded in 2013 by Pujya Devi Chitralekha Ji, Gau Seva Dham is dedicated to saving and serving Gau Mata and helpless animals. Situated in Hodal, Palwal District, Haryana, the NGO operates under the World Sankirtan Tour Trust, providing free medical treatment, food, and shelter to stray and injured cows.'}</MutedText>
+              <SubTitle className='text-success'>{g('animal')}</SubTitle>
+              <Title>{g('animal_title')}</Title>
+              <MutedText className='card-text '>{g('animal_details')}</MutedText>
 
               <div className='my-5'>
                 <RowWrapper className=''>
@@ -114,9 +115,7 @@ function GauSeva() {
                     </div>
                   </div>
                   <div className='col-6'>
-                    24/7 Animal Rescue & Medical Care
-                    State-of-the-art Veterinary Facilities
-                    Community Outreach for Animal Welfare
+                    {g('24')}
                   </div>
                 </RowWrapper>
               </div>
@@ -126,38 +125,18 @@ function GauSeva() {
       </ContainerWapper>
 
 
-      {/* <div className='py-5'> */}
-
-      {/* <div class="container"><div class="wraper bg-warning rounded my-5 p-5"><div class="row g-0 "><div class="col col-lg-3 col-md-6 col-12"><div class="item p-5">
-          <i class="fi flaticon-handshake"></i><h2><span class="odometer odometer-auto-theme" data-count="40"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">4</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></span>K+</h2><p>Animals Treated</p></div></div><div class="col col-lg-3 col-md-6 col-12"><div class="item p-5">
-
-            <i class="fi flaticon-first-aid-kit"></i><h2><span class="odometer odometer-auto-theme" data-count="150"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">1</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">5</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></span>+</h2><p>Trained Staff &amp; Caretakers</p></div></div><div class="col col-lg-3 col-md-6 col-12"><div class="item p-5">
-
-              <i class="fi flaticon-charity"></i><h2><span class="odometer odometer-auto-theme" data-count="10"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">1</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></span>K+</h2><p>Supporting Our Mission</p></div></div><div class="col col-lg-3 col-md-6 col-12"><div class="item p-5">
-
-                <i class="fi flaticon-medal"></i><h2><span class="odometer odometer-auto-theme" data-count="10"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">1</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></span>+</h2><p>Years of Serving</p></div></div></div></div></div>
-      </div> */}
-
       <div className='card-body-2 '>
         <div className='p-5'>
-          <SubTitle className='text-success text-center'>{' hbh bhbb b hb hb hb hb h bhb h b '}</SubTitle>
-          <Title className='text-center'>{'A Lifeline For Injured & Abandoned Cows '}</Title>
           <RowWrapper className='p-5'>
             <div className='col-md-6 col-12'>
               <div className='p-4 card border-0'>
                 <Image
                   loading='lazy'
                   decoding="async"
-                  src="/assets/choose-us.jpg"
+                  src="/assets/gau/4.png"
                   alt="astrology image"
-                  className="as-service-img img-responsive  w-100 shadow" />
-                <div className="card-body">
-                  <h5 className="card-title">yuhyuh</h5>
-                  <p className="card-text">jbuyhuihjhnuhuhuhuhuhuhuhiih h9ujjunb 9jjuuhjiuhuhjhiuhj</p>
+                  className="as-service-img img-responsive w-100 shadow" />
 
-
-
-                </div>
               </div>
             </div>
             <div className='col-md-6 col-12'>
@@ -165,16 +144,10 @@ function GauSeva() {
                 <Image
                   loading='lazy'
                   decoding="async"
-                  src="/assets/choose-us.jpg"
+                  src="/assets/gau/5.jpg"
                   alt="astrology image"
-                  className="as-service-img img-responsive  w-100 shadow" />
-                <div className="card-body">
-                  <h5 className="card-title">yuhyuh</h5>
-                  <p className="card-text">jbuyhuihuhjiui jnuhuih ujjoi ijiojoi huhjhiuhj</p>
+                  className="as-service-img img-responsive w-100 shadow" />
 
-
-
-                </div>
               </div>
             </div>
           </RowWrapper>

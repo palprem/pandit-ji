@@ -1,8 +1,20 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
+import { Carousel } from "bootstrap";
 
-function Carousel({ children, images = [] }) {
+function Carousels({ children, images = [] }) {
+    useEffect(() => {
+        const element = document.querySelector("#carouselHomeCaptions");
+        if (element) {
+            new Carousel(element, {
+                interval: 3000,
+                ride: "carousel",
+                pause: false,
+            });
+        }
+    }, []);
     return (
-        <div id="carouselHomeCaptions" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"  data-bs-pause="false">
+        <div id="carouselHomeCaptions" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
             <div className="carousel-indicators">
                 {images.map((_, i) => (
                     <button
@@ -32,4 +44,4 @@ function Carousel({ children, images = [] }) {
     )
 }
 
-export default Carousel;
+export default Carousels;
