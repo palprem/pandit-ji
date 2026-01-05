@@ -2,9 +2,7 @@
 
 import React, { useEffect, useLayoutEffect, useState } from 'react'
 import Link from 'next/link'
-import Image from '@/components/image'
 import Button from '@/components/button'
-import Title from '@/components/typography/title'
 import Input from '@/components/input'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLock, faPhoneVolume, faTextWidth, faUser, faUserTie } from '@fortawesome/free-solid-svg-icons'
@@ -18,6 +16,7 @@ import WellcomeContent from '../home/wellcomeContent';
 import FormWrapper from '@/wrapper/formWrapper';
 import FoundLanguage from '@/utils/foundLanguage';
 import { useTranslations } from 'use-intl';
+import { Title } from '@/components/typography/title';
 
 const initialState = {
     first_name: '',
