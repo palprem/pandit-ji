@@ -24,10 +24,10 @@
     "jsonwebtoken": "^9.0.2",
     "motion": "^12.23.24",
     "mysql2": "^3.15.2",
-    "next": "15.5.4",
+    "next": "^16.1.1",
     "next-intl": "^4.4.0",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "react-redux": "^9.2.0",
     "react-toastify": "^11.0.5",
     "redux-persist": "^6.0.0"
