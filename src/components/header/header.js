@@ -34,7 +34,7 @@ function Header() {
     const typeOfPooja = [
         {
             title: p('mahadev_pooja'),
-            src: '/assets/puja/mahadev.png',
+            src: '/assets/puja/mahadev/10.png',
             href: `${selectedLangWithSlace}/puja-lists/mahadev`
         },
         {
