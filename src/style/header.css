@@ -3,17 +3,16 @@
     width: 50lvw !important;
     padding-left: 20px;
     top: 65px;
-    border-radius: 30px;
+    border-radius: 0px 30px;
   }
 
-
-  /* .hover-shadow-lg:hover {
-    transition: all 0.4s ease;
-    border-bottom: 0.5cap rgb(241, 180, 46) solid;
-  }
-
-  .transition-all {
-    transition: all 0.9s ease;
+  /* 
+  .header {
+    position: fixed;
+    width: 1905px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top: 0px;
   } */
 
   .font-bold {
@@ -21,9 +20,13 @@
     /* font-size: 15px; */
   }
 
-  .straper-bg-img{
-    height: 28lvh;
+  .straper-bg-img {
+    max-height: 28lvh;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
   }
+
 
   .straper-title {
     font-size: 3rem !important;
@@ -57,6 +60,7 @@
     height: 70px;
     width: 100%;
   }
+
   .navbar-drop-items a img {
     height: 5lvh;
   }

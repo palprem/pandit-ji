@@ -13,7 +13,7 @@ function CustomNavbar({ navLavel = '', data = [] }) {
                 {
                     data.map((moveItem, index) => {
                         return <div className="col-6 col-md-4" key={index}>
-                            <div className="card shadow-sm  rounded-4 navbar-drop-items ">
+                            <div className="card shadow-sm navbar-drop-items " style={{ borderRadius: "0px 30px" }}>
                                 <Link href={moveItem.href} className="d-flex align-items-center p-2 text-decoration-none mt-auto mb-auto">
                                     <Image
                                         {...moveItem}
@@ -23,6 +23,7 @@ function CustomNavbar({ navLavel = '', data = [] }) {
                                         height="50" />
                                     <div className="d-flex justify-content-between align-items-center w-100">
                                         <small className='text-black fw-normal'>{moveItem.title}</small>
+
                                         <FontAwesomeIcon className="bi bi-chevron-right text-black" icon={faChevronRight} />
                                     </div>
                                 </Link>
@@ -30,9 +31,7 @@ function CustomNavbar({ navLavel = '', data = [] }) {
                         </div>
                     })
                 }
-
             </CustomMavbarWrapper>
-
         </>
     )
 }

@@ -1,49 +1,20 @@
-// import React from 'react'
-// import Img from "next/image";
-
-// function Image({
-//     src,
-//     alt = "",
-//     width = 600,
-//     height = 400,
-//     priority = false,
-//     className = ' ',
-//     ...rest
-
-// }) {
-//     return (
-//         <Img
-//             src={src}
-//             width={width}
-//             height={height}
-//             loading="lazy"
-//             alt={alt}
-//             className={"img-fluid " + className}
-//             // placeholder="blur"
-//             // blurDataURL="/assets/placeholder.webp"
-//             {...rest}
-//         />
-//     )
-// }
-
-// export default Image
-
-
 import React from "react";
 import NextImage from "next/image";
 
 function Image({
     src,
+    style = '',
     alt = "jhjkjknuju",
     width = 600,
     height = 400,
     priority = false,
     className = "",
-    fill = false, 
+    fill = false,
     ...rest
 }) {
     return (
         <NextImage
+            style={style}
             src={src}
             alt={alt}
             width={!fill ? width : undefined}

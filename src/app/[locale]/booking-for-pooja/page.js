@@ -4,10 +4,10 @@ import React from 'react'
 function BookingForPooja() {
   return (
     <>
-    <Streper title='Booking for Pooja' />
-    Booking for pooja
+      <Streper title='Booking for Puja' />
+      Booking for puja
     </>
   )
 }
 
-export default BookingForPooja
+export default BookingForPooja;

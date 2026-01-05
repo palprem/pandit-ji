@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import '@/style/card.css'
 import '@/style/common.css'
-import Title from '@/components/typography/title'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLock, faUserTie } from '@fortawesome/free-solid-svg-icons'
 import Button from '@/components/button'
@@ -16,6 +15,7 @@ import WellcomeContent from '../home/wellcomeContent'
 import FormWrapper from '@/wrapper/formWrapper'
 import FoundLanguage from '@/utils/foundLanguage'
 import { useTranslations } from 'next-intl';
+import { Title } from '@/components/typography/title'
 
 const initialState = {
     identifier: '',

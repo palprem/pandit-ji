@@ -13,11 +13,13 @@ import FoundLanguage from '@/utils/foundLanguage';
 import '../../style/header.css';
 import '../../style/common.css';
 
-
 function Header() {
     const t = useTranslations('Navbar');
     const b = useTranslations('buttons');
-    const l = useTranslations('labels');
+    const p = useTranslations('navbar_pooja');
+    const v = useTranslations('navbar_vastu');
+    const kar = useTranslations('navbar_16_sanskar');
+    const s = useTranslations('serviceCards');
 
     const dispatch = useDispatch();
     const { selectedLangWithSlace } = FoundLanguage()
@@ -29,84 +31,168 @@ function Header() {
         persistor.purge();
     };
 
-    const typeOfPuja = [
+    const typeOfPooja = [
         {
-            title: l('mahadev_puja'),
+            title: p('mahadev_pooja'),
             src: '/assets/puja/mahadev.png',
-            href: `${selectedLangWithSlace}/puja/mahadev-puja`
+            href: `${selectedLangWithSlace}/puja-lists/mahadev`
         },
         {
-            title: l('devi_puja'),
+            title: p('devi_pooja'),
             src: '/assets/puja/dev.png',
-            href: `${selectedLangWithSlace}/puja/devi-puja`
+            href: `${selectedLangWithSlace}/puja-lists/devi`
         },
         {
-            title: l('hanuman_puja'),
+            title: p('hanuman_pooja'),
             src: '/assets/puja/hanumanji.png',
-            href: `${selectedLangWithSlace}/puja/hanuman-puja`
+            href: `${selectedLangWithSlace}/puja-lists/hanuman`
         },
         {
-            title: l('kashi_puja'),
+            title: p('kashi_pooja'),
             src: '/assets/puja/kashi.png',
-            href: `${selectedLangWithSlace}/puja/kashi-puja`
+            href: `${selectedLangWithSlace}/puja-lists/kashi`
         },
         {
-            title: l('pitra_puja'),
+            title: p('pitra_pooja'),
             src: '/assets/puja/pitra.png',
-            href: `${selectedLangWithSlace}/puja/pitra-puja`
+            href: `${selectedLangWithSlace}/puja-lists/pitra`
         },
         {
-            title: l('ganesh_puja'),
+            title: p('ganesh_pooja'),
             src: '/assets/puja/ganesh.png',
-            href: `${selectedLangWithSlace}/puja/ganesh-puja`
+            href: `${selectedLangWithSlace}/puja-lists/ganesh`
         },
         {
-            title: l('bhairav_puja'),
+            title: p('bhairav_pooja'),
             src: '/assets/puja/bhairav.png',
-            href: `${selectedLangWithSlace}/puja/bhairav-puja`
+            href: `${selectedLangWithSlace}/puja-lists/kaalbhairav`
+        },
+        {
+            title: p('10_maha_pooja'),
+            src: '/assets/puja/10.png',
+            href: `${selectedLangWithSlace}/puja-lists/mahavidhya`
         }
     ];
 
     const typeOfVastu = [
         {
-            title: l('residential_vastu'),
+            title: v('residential_vastu'),
             src: '/assets/vastu/residential.png',
             href: `${selectedLangWithSlace}/vastu/residential`
         },
         {
-            title: l('commercial_vastu'),
-            src: '/assets/vastu/commercial.jpg',
+            title: v('commercial_vastu'),
+            src: '/assets/vastu/commercial.png',
             href: `${selectedLangWithSlace}/vastu/commercial`
         },
         {
-            title: l('industrial_vastu'),
+            title: v('industrial_vastu'),
             src: '/assets/vastu/industrial.png',
             href: `${selectedLangWithSlace}/vastu/industrial`
         },
         {
-            title: l('vastu_vivaran'),
+            title: v('vastu_vivaran'),
             src: '/assets/vastu/vastu.png',
             href: `${selectedLangWithSlace}/vastu/nivaran`
         },
         {
-            title: l('kundali'),
-            src: '/assets/vastu/nivaran.webp',
+            title: v('kundali'),
+            src: '/assets/vastu/kundali.png',
             href: `${selectedLangWithSlace}/vastu/kundali`
         },
         {
-            title: l('couple_kundli'),
+            title: v('couple_kundli'),
             src: '/assets/vastu/couple.webp',
             href: `${selectedLangWithSlace}/vastu/couple`
+        }
+    ];
+
+    const sixteen_sanskar = [
+        {
+            title: kar('garbhadhaan'),
+            src: '/assets/vastu/residential.png',
+            href: `${selectedLangWithSlace}/vastu/residential`
         },
         {
-            title: l('baby_name_report'),
-            src: '/assets/vastu/baby.webp',
-            href: `${selectedLangWithSlace}/vastu/baby`
+            title: kar('punsavan'),
+            src: '/assets/vastu/residential.png',
+            href: `${selectedLangWithSlace}/vastu/residential`
+        },
+        {
+            title: kar('simantonayan'),
+            src: '/assets/vastu/residential.png',
+            href: `${selectedLangWithSlace}/vastu/residential`
+        },
+        {
+            title: kar('jatkarma'),
+            src: '/assets/vastu/residential.png',
+            href: `${selectedLangWithSlace}/vastu/residential`
+        },
+        {
+            title: kar('naamkaran'),
+            src: '/assets/vastu/residential.png',
+            href: `${selectedLangWithSlace}/vastu/residential`
+        },
+        {
+            title: kar('nishkramana'),
+            src: '/assets/vastu/residential.png',
+            href: `${selectedLangWithSlace}/vastu/residential`
+        },
+        {
+            title: kar('annprashan'),
+            src: '/assets/vastu/residential.png',
+            href: `${selectedLangWithSlace}/vastu/residential`
+        },
+        {
+            title: kar('chaul'),
+            src: '/assets/vastu/residential.png',
+            href: `${selectedLangWithSlace}/vastu/residential`
+        },
+        {
+            title: kar('vidyarambh'),
+            src: '/assets/vastu/residential.png',
+            href: `${selectedLangWithSlace}/vastu/residential`
+        },
+        {
+            title: kar('karnavedh'),
+            src: '/assets/vastu/residential.png',
+            href: `${selectedLangWithSlace}/vastu/residential`
+        },
+        {
+            title: kar('upnayan'),
+            src: '/assets/vastu/residential.png',
+            href: `${selectedLangWithSlace}/vastu/residential`
+        },
+        {
+            title: kar('vedarambha'),
+            src: '/assets/vastu/residential.png',
+            href: `${selectedLangWithSlace}/vastu/residential`
+        },
+        {
+            title: kar('keshani_samskar'),
+            src: '/assets/vastu/residential.png',
+            href: `${selectedLangWithSlace}/vastu/residential`
+        },
+        {
+            title: kar('samavartan'),
+            src: '/assets/vastu/residential.png',
+            href: `${selectedLangWithSlace}/vastu/residential`
+        },
+        {
+            title: kar('vivah'),
+            src: '/assets/vastu/residential.png',
+            href: `${selectedLangWithSlace}/vastu/residential`
+        },
+        {
+            title: kar('antyesthi'),
+            src: '/assets/vastu/residential.png',
+            href: `${selectedLangWithSlace}/vastu/residential`
         },
     ];
 
+
     return (
-        <div className='shadow-sm'>
+        <div className='shadow-sm header'>
             <nav className="header-width navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container bg-light">
                     <Link className="navbar-brand w-25" href="/">
@@ -129,16 +215,22 @@ function Header() {
                             </li>
 
                             <li className="nav-item font-bold hover-shadow-lg transition-all dropdown">
-                                <CustomNavbar navLavel={t('our_puja')} data={typeOfPuja} />
+                                <CustomNavbar navLavel={t('our_pooja')} data={typeOfPooja} />
                             </li>
 
                             <li className="nav-item font-bold hover-shadow-lg transition-all dropdown">
                                 <CustomNavbar navLavel={t('vastu')} data={typeOfVastu} />
+                            </li>
+
+                            <li className="nav-item font-bold hover-shadow-lg transition-all">
+                                {/* <CustomNavbar navLavel={s('16_sanskar')} data={sixteen_sanskar} />
+                                 */}
+                                <Link className="nav-link " href={selectedLangWithSlace + "/sanskar"} tabIndex="-1" aria-disabled="true">{s('16_sanskar')}</Link>
 
                             </li>
 
                             <li className="nav-item font-bold hover-shadow-lg transition-all">
-                                <Link className="nav-link" href={selectedLangWithSlace + "/booking-for-pooja"} tabIndex="-1" aria-disabled="true">{t('gau_seva')}</Link>
+                                <Link className="nav-link" href={selectedLangWithSlace + "/gau-seva"} tabIndex="-1" aria-disabled="true">{t('gau_seva')}</Link>
                             </li>
 
                             <li className="nav-item font-bold hover-shadow-lg transition-all">

@@ -56,7 +56,7 @@ export default async function RootLayout({ children, params }) {
 
 
   return (
-    <html lang={locale}>
+    <html lang={locale} data-scroll-behavior="smooth">
       <body className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable}`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ProvidersWrapper>{children}</ProvidersWrapper>

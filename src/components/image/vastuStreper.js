@@ -22,7 +22,7 @@ function VastuStreper({ title = '' }) {
                         className='straper-img'
                     />
 
-                    <h1 className='fw-bold straper-title mt-auto mb-auto' >{title}</h1>
+                    <h4 className='fw-bold straper-title mt-auto mb-auto' >{title}</h4>
 
                     <Image
                         width={200}

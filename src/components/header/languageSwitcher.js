@@ -1,17 +1,26 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import Button from '../button';
 import FoundLanguage from '@/utils/foundLanguage';
 
 export default function LocaleSwitcher() {
+
     const router = useRouter();
+    const searchParams = useSearchParams();
+    const queryString = searchParams.toString();
 
     const { pathname, locale } = FoundLanguage()
 
-    const switchLanguage = (locale) => {
-        const newPath = pathname.replace(/^\/(en|hi)/, `/${locale}`);
-        router.push(newPath);
+    const switchLanguage = (lang) => {
+        const updatedPath = pathname.replace(/^\/(en|hi)/, `/${lang}`) + "?" + queryString;
+
+        // router.push(
+        //     `/${lang}${pathname.replace(/^\/(en|hi)/, "")}${queryString ? `?${queryString}` : ""
+        //     }`, {scroll: false}
+        // );
+
+        router.push(updatedPath)
     };
 
     return (

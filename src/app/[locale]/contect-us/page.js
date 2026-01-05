@@ -1,5 +1,5 @@
 import Button from '@/components/button'
-import Title from '@/components/typography/title'
+import {Title} from '@/components/typography/title'
 import Streper from '@/components/image/streper'
 import Input from '@/components/input'
 import { faTex } from '@fortawesome/free-brands-svg-icons'

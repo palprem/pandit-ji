@@ -11,7 +11,7 @@ import FoundLanguage from '@/utils/foundLanguage'
 function DonateUs() {
     const { selectedLangWithSlace } = FoundLanguage()
 
-    const ganeshPujaItems = [
+    const ganeshPoojaItems = [
         {
             title: 'Gau Seva',
             subTitle: 'With supporting text below as a natural lead-in to additional content.',
@@ -51,7 +51,7 @@ function DonateUs() {
             <ContainerWapper>
                 <RowWrapper>
                     {
-                        ganeshPujaItems.map((item, index) => {
+                        ganeshPoojaItems.map((item, index) => {
                             return <CardWithDetails {...item} key={index} />
                         })
                     }

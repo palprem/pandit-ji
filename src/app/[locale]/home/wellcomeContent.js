@@ -5,11 +5,12 @@ import '@/style/wellcome.css'
 
 
 function WellcomeContent() {
+    const g = useTranslations('global')
     const t = useTranslations('HomePage')
     return (
         <>
             <div className='px-md-4 p-4' >
-                <h1 className='it-hero-3-title-box'>{t('title')}</h1>
+                <h1 className='it-hero-3-title-box hero-title'>{t('title') + g('name')}</h1>
                 <p className='it-hero-3-title-p'>{t('subTitle')}</p>
             </div>
 

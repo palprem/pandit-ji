@@ -1,17 +1,18 @@
 import React from 'react'
+import { useTranslations } from 'next-intl';
 
-function CarouselWrapper({ children, active }) {
-
+function CarouselWrapper({ children, active=0 }) {
+  const t = useTranslations('HomePageCaroselTitle');
+  const b = useTranslations('buttons');
+  
     return (
         <div className={`position-relative carousel-item ${active==0 ? "active" : ""}`}>
             {children}
             <div className="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-                <button type='button' className='btn btn-warning rounded-0 text-white'>Donate Us</button>
+                <button type='button' className='btn btn-warning rounded-0 text-white'>{b('donate')}</button>
             </div>
         </div>
     )
 }
 
-export default CarouselWrapper
+export default CarouselWrapper;
