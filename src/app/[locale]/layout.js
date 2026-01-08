@@ -41,39 +41,51 @@ const playfair = Playfair_Display({
 
 
 export const metadata = {
-  title: "Raja Shastri | astrologer | Ashram Construction | Puja, Gau Puja, 16 Sanskar, Vastu, Gau Seva",
+  title:
+    "Raja Shastri | Astrologer | Ashram Construction | Gau Puja | 16 Sanskar | Vastu | Gau Seva",
+
   description:
-    "Ashram Construction services including Gau Puja, 16 Sanskar, Vastu Shastra, Gau Seva, and Water Service. Trusted spiritual and traditional construction solutions.",
+    "Raja Shastri provides Ashram Construction services including Gau Puja, 16 Sanskar, Vastu Shastra, Gau Seva, Water Service and Vedic rituals. Trusted spiritual guidance and traditional solutions.",
+
   keywords: [
+    "Raja Shastri",
+    "Pandit Raja Shastri",
+    "Astrologer",
+    "Vedic Jyotish",
     "Ashram Construction",
     "Gau Puja",
     "16 Sanskar",
     "Vastu Shastra",
     "Gau Seva",
     "Water Service",
-    "Spiritual Construction",
-    "Ashram Builder India",
-    "Kashi Vishwanath",
-    "Vedic Jyotish",
     "Anusthan Kendra",
-    "Acharya Gopal Sharan Pandey Ji",
-    "Raja Shastri",
-    "Pandit Raja Shastri",
-    "Puja",
-    "astrologer"
+    "Kashi Vishwanath",
+    "Spiritual Services India"
   ],
+
+  alternates: {
+    canonical: "https://raja-shastri.vercel.app/hi",
+    languages: {
+      hi: "https://raja-shastri.vercel.app/hi",
+      en: "https://raja-shastri.vercel.app/en",
+    },
+  },
+
   openGraph: {
-    title: "Ashram Construction Services",
+    title: "Raja Shastri | Ashram Construction & Spiritual Services",
     description:
-      "We provide Ashram Construction, Gau Puja, 16 Sanskar, Vastu, Gau Seva & Water Service.",
-    url: "https://raja-shastri.vercel.app",
-    siteName: "Ashram Construction",
+      "Ashram Construction, Gau Puja, 16 Sanskar, Vastu Shastra, Gau Seva and Vedic spiritual services by Raja Shastri.",
+    url: "https://raja-shastri.vercel.app/hi",
+    siteName: "Raja Shastri",
+    locale: "hi_IN",
     type: "website",
   },
+
   verification: {
     google: "lFdzQZ9aK7XDuhdxUwDWD6aA1eY-8KHljmDiQNSRa68",
   },
 };
+
 
 
 export default async function RootLayout({ children, params }) {
