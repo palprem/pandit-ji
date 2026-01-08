@@ -8,14 +8,12 @@ import CardWrapper from '@/components/card/card-wrapper';
 import { SmallTitle, SubTitle, Title } from '@/components/typography/title';
 import { useTranslations } from 'next-intl';
 import MutedText from '@/components/typography/mutedText';
-import StrongTitle from '@/components/typography/strongTitle';
 import KnowMore from '@/components/KnowMore';
 import Streper from '@/components/image/streper';
 
 function Sanskar() {
 
   const p = useTranslations('sanskar');
-  const b = useTranslations('buttons');
 
   return (
     <div>

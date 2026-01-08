@@ -15,14 +15,28 @@ import { faEnvelope, faHouseChimney, faPhone } from '@fortawesome/free-solid-svg
 import KnowMore from '@/components/KnowMore'
 import Streper from '@/components/image/streper'
 
+export const metadata = {
+  title: "Gau Seva Services | Ashram Construction",
+  description:
+    "Dedicated Gau Seva services including cow shelter, care, puja and traditional Sanatan practices.",
+  keywords: [
+    "Gau Seva",
+    "Cow Protection",
+    "Goshala",
+    "Ashram Gau Seva"
+  ],
+};
+
+
 function GauSeva() {
   const f = useTranslations('footer');
   const g = useTranslations('gau_seva');
   const b = useTranslations('buttons');
 
+
   return (
     <>
-    <Streper/>
+      <Streper />
       <div style={{ backgroundImage: "url(/assets/gau/home-bg.webp)", minHeight: "70lvh" }}>
 
         <ContainerWapper>

@@ -41,7 +41,7 @@ const playfair = Playfair_Display({
 
 
 export const metadata = {
-  title: "Raja Shastri |Ashram Construction | Puja, Gau Puja, 16 Sanskar, Vastu, Gau Seva",
+  title: "Raja Shastri | astrologer | Ashram Construction | Puja, Gau Puja, 16 Sanskar, Vastu, Gau Seva",
   description:
     "Ashram Construction services including Gau Puja, 16 Sanskar, Vastu Shastra, Gau Seva, and Water Service. Trusted spiritual and traditional construction solutions.",
   keywords: [
@@ -60,6 +60,7 @@ export const metadata = {
     "Raja Shastri",
     "Pandit Raja Shastri",
     "Puja",
+    "astrologer"
   ],
   openGraph: {
     title: "Ashram Construction Services",
@@ -68,6 +69,9 @@ export const metadata = {
     url: "https://raja-shastri.vercel.app",
     siteName: "Ashram Construction",
     type: "website",
+  },
+  verification: {
+    google: "lFdzQZ9aK7XDuhdxUwDWD6aA1eY-8KHljmDiQNSRa68",
   },
 };
 
