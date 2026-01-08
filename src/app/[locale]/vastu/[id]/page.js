@@ -2,7 +2,6 @@ import CardWrapper from '@/components/card/card-wrapper';
 import ContainerWapper from '@/components/card/container-wapper';
 import RowWrapper from '@/components/card/row-wrapper';
 import Image from '@/components/image';
-import VastuStreper from '@/components/image/vastuStreper'
 import StrongTitle from '@/components/typography/strongTitle';
 import { vastuConstant } from '@/utils/vastuConstant';
 import { useTranslations } from 'next-intl';
@@ -10,22 +9,23 @@ import { use } from 'react';
 import '@/style/card.css';
 import MutedText from '@/components/typography/mutedText';
 import { SubTitle } from '@/components/typography/title';
-import Button from '@/components/button';
-import Input from '@/components/input';
-import { faPhone, faUserTie } from '@fortawesome/free-solid-svg-icons';
-import { faTex } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import KnowMore from '@/components/KnowMore';
+import Streper from '@/components/image/streper';
 
 function VastuDetails({ params }) {
     const { id: name } = use(params);
 
-    const r = useTranslations(name);
     const data = vastuConstant(name) ?? [];
+    const p = useTranslations('poojaBenifits')
+
+    let r;
+    if (data.length) {
+        r = useTranslations(name);
+    } else r = (key) => key
 
     return (
         <>
-            <VastuStreper title={r('title')} />
+            <Streper title={r('title')} />
             <CardWrapper style=''>
                 <ContainerWapper>
                     <RowWrapper>
@@ -88,7 +88,7 @@ function VastuDetails({ params }) {
                         <div className='col-md-4 col-12'>
                             <div className=' card-body'>
                                 <div className=' card-body-2'>
-                                    <SubTitle className='border-4 border-start border-dark p-2 my-3 '>Benefits of Vastu</SubTitle>
+                                    <SubTitle className='border-4 border-start border-dark p-2 my-3 '>{p('0')}</SubTitle>
                                     <div className="mx-1 mx-md-4  pb-3">
                                         <StrongTitle>
                                             <MutedText className='card-text'>
@@ -99,7 +99,7 @@ function VastuDetails({ params }) {
                                 </div>
 
                                 <div className='my-4 card-body-2'>
-                                <KnowMore/>
+                                    <KnowMore type={name + ' Vastu'} />
                                 </div>
                             </div>
 

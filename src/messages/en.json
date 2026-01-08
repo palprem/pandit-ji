@@ -10,7 +10,8 @@
     "about": "About Us",
     "contact": "Conatct Us",
     "gallery": "Gallery",
-    "user_name": "Hello, "
+    "user_name": "Hello, ",
+    "dashboard": "Dashboard"
   },
   "input": {
     "email_phone": "Email id or Phone number",
@@ -89,9 +90,8 @@
     "3_care_details": "Spreading awareness among communities about animal welfare and the importance of timely.",
     "animal": "A Sanctuary for Stray & Injured Animals",
     "animal_title": "Devotion & Service",
-    "animal_details":"Pandit Raja Shastri Ji has been devotedly engaged in Gau Seva for over 20 years. With deep faith and compassion, he has dedicated his life to the protection, care, and welfare of cows. Through his continuous efforts, injured, abandoned, and sick cows receive timely medical treatment, proper nourishment, and a safe shelter. His long-standing service reflects true selfless dedication, spiritual values, and a strong commitment to preserving India’s sacred tradition of Gau Seva.",
-    "24":"24/7 Animal Rescue & Medical Care State-of-the-art Veterinary Facilities Community Outreach for Animal Welfare"
-  
+    "animal_details": "Pandit Raja Shastri Ji has been devotedly engaged in Gau Seva for over 20 years. With deep faith and compassion, he has dedicated his life to the protection, care, and welfare of cows. Through his continuous efforts, injured, abandoned, and sick cows receive timely medical treatment, proper nourishment, and a safe shelter. His long-standing service reflects true selfless dedication, spiritual values, and a strong commitment to preserving India’s sacred tradition of Gau Seva.",
+    "24": "24/7 Animal Rescue & Medical Care State-of-the-art Veterinary Facilities Community Outreach for Animal Welfare"
   },
   "serviceCards": {
     "serviceTitle": "Our Services",
@@ -552,6 +552,7 @@
     "16_": "Antyeshti Sanskar is the final rite of death, performed after one's death, involving cremation and purifying the soul. It is important for Ayurvedic wisdom, as it emphasizes the importance of care for the body until the last moment. Antyeshti also has spiritual significance, as it releases the soul from karmic bondage and guides the departed to peace and liberation. Modern funeral processions are often dictated by community customs, but Antyeshti reminds parents to respect the body and the sacredness of life's end."
   },
   "poojaBenifits": {
+    "0":"Benefits of Vastu",
     "1": "Spiritual Growth and Inner Peace",
     "1_": "Pooja helps connect the individual with divine energy, creating inner peace and spiritual awareness. Regular worship calms the mind, reduces negative thoughts, and strengthens faith. It encourages self-reflection, devotion, and gratitude, leading to emotional balance and a deeper sense of purpose in life.",
     "2": "Mental and Emotional Well-Being",
@@ -561,20 +562,26 @@
     "4": "Discipline and Moral Values",
     "4_": "Daily Pooja instills discipline, routine, and self-control. It encourages values such as patience, humility, respect, and gratitude. By following rituals regularly, individuals develop a structured lifestyle, ethical thinking, and a strong moral foundation that guides their actions in personal and social life."
   },
-  "forms":{
-    "title":"For Know More",
-    "1":"Full Name",
-    "2":"Contect Number",
-    "3":"Email Id",
-    "4":"Tell us what you want to talk about",
-    "5":"Submit"
+  "about": {
+    "who": "Who we are and what we do",
+    "who_1": "Pandit Raja Shastri Ji is a Vedic priest with over 20 years of experience in Gau Seva, Vedic pooja, Vastu Shastra, and the 16 Sanskars.",
+    "who_details": "Pandit Raja Shastri Ji is a highly respected and experienced spiritual guide with over 20 years of dedicated service in the fields of Gau Seva, Vedic Pooja, Vastu Shastra, and the 16 Sanskars (Shodasha Sanskar). His life’s work is deeply rooted in Sanatan Dharma, with a strong commitment to preserving and practicing ancient Vedic traditions in their purest form. With profound knowledge of scriptures, rituals, and spiritual sciences, Pandit Ji has guided thousands of families through important religious and life events. His expertise in Gau Seva reflects his belief in the sacredness of cows and their vital role in spiritual, environmental, and social well-being. Through continuous service and care, he promotes compassion, dharma, and selfless service.Pandit Raja Shastri Ji performs a wide range of Vedic Poojas, including Grah Shanti, Havan, Yagya, and special Anushthans, ensuring rituals are conducted with complete vidhi-vidhan and devotion. His deep understanding of Vastu Shastra helps individuals and organizations bring harmony, positivity, and prosperity into their homes and workplaces.He a lso specializes in conducting all 16 Sanskars, from Garbhadhana to Antyeshti, guiding individuals through every sacred milestone of life with authenticity and spiritual integrity. Through his work, Pandit Raja Shastri Ji continues to spread faith, balance, and divine grace in modern life while staying true to timeless Vedic values."
+  },
+  "forms": {
+    "title": "For Know More",
+    "1": "Full Name",
+    "2": "Contect Number",
+    "3": "Email Id",
+    "4": "Tell us what you want to talk about",
+    "6": "Date",
+    "5": "Submit"
   },
   "footer": {
     "social": "Conatct us social on media:",
     "add_1": "Naipura kalan, naipura khurd, tikri marg, varanasi – 221011",
     "add_2": "N-13/209, E2-Kedar nagar colony near upkar hospital, brijenclave, varanasi uttar pradesh - 221005",
     "phone_1": "+918542878714",
-    "phone_2": "+919450213535",
+    "phone_2": "+917007121417",
     "contact": "Contact us"
   }
 }

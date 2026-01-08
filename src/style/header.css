@@ -91,3 +91,16 @@
     }
 
   }
+
+
+
+  /* ================================================== */
+  .image-aboutus-banner {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("/assets/carousel/carousel-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }

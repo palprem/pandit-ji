@@ -18,13 +18,12 @@ function Header() {
     const b = useTranslations('buttons');
     const p = useTranslations('navbar_pooja');
     const v = useTranslations('navbar_vastu');
-    const kar = useTranslations('navbar_16_sanskar');
     const s = useTranslations('serviceCards');
 
     const dispatch = useDispatch();
     const { selectedLangWithSlace } = FoundLanguage()
 
-    const { user: { token = null, first_name = null } } = useSelector((state) => state.auth);
+    const { user: { token = null, first_name = null, last_name = null } } = useSelector((state) => state.auth);
 
     const handleLogout = () => {
         dispatch(logOut());
@@ -107,101 +106,17 @@ function Header() {
         }
     ];
 
-    const sixteen_sanskar = [
-        {
-            title: kar('garbhadhaan'),
-            src: '/assets/vastu/residential.png',
-            href: `${selectedLangWithSlace}/vastu/residential`
-        },
-        {
-            title: kar('punsavan'),
-            src: '/assets/vastu/residential.png',
-            href: `${selectedLangWithSlace}/vastu/residential`
-        },
-        {
-            title: kar('simantonayan'),
-            src: '/assets/vastu/residential.png',
-            href: `${selectedLangWithSlace}/vastu/residential`
-        },
-        {
-            title: kar('jatkarma'),
-            src: '/assets/vastu/residential.png',
-            href: `${selectedLangWithSlace}/vastu/residential`
-        },
-        {
-            title: kar('naamkaran'),
-            src: '/assets/vastu/residential.png',
-            href: `${selectedLangWithSlace}/vastu/residential`
-        },
-        {
-            title: kar('nishkramana'),
-            src: '/assets/vastu/residential.png',
-            href: `${selectedLangWithSlace}/vastu/residential`
-        },
-        {
-            title: kar('annprashan'),
-            src: '/assets/vastu/residential.png',
-            href: `${selectedLangWithSlace}/vastu/residential`
-        },
-        {
-            title: kar('chaul'),
-            src: '/assets/vastu/residential.png',
-            href: `${selectedLangWithSlace}/vastu/residential`
-        },
-        {
-            title: kar('vidyarambh'),
-            src: '/assets/vastu/residential.png',
-            href: `${selectedLangWithSlace}/vastu/residential`
-        },
-        {
-            title: kar('karnavedh'),
-            src: '/assets/vastu/residential.png',
-            href: `${selectedLangWithSlace}/vastu/residential`
-        },
-        {
-            title: kar('upnayan'),
-            src: '/assets/vastu/residential.png',
-            href: `${selectedLangWithSlace}/vastu/residential`
-        },
-        {
-            title: kar('vedarambha'),
-            src: '/assets/vastu/residential.png',
-            href: `${selectedLangWithSlace}/vastu/residential`
-        },
-        {
-            title: kar('keshani_samskar'),
-            src: '/assets/vastu/residential.png',
-            href: `${selectedLangWithSlace}/vastu/residential`
-        },
-        {
-            title: kar('samavartan'),
-            src: '/assets/vastu/residential.png',
-            href: `${selectedLangWithSlace}/vastu/residential`
-        },
-        {
-            title: kar('vivah'),
-            src: '/assets/vastu/residential.png',
-            href: `${selectedLangWithSlace}/vastu/residential`
-        },
-        {
-            title: kar('antyesthi'),
-            src: '/assets/vastu/residential.png',
-            href: `${selectedLangWithSlace}/vastu/residential`
-        },
-    ];
-
-
     return (
         <div className='shadow-sm header'>
             <nav className="header-width navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container bg-light">
-                    <Link className="navbar-brand w-25" href="/">
+                    <Link className="navbar-brand " style={{ width: '12rem' }} href="/">
                         <CustomImage
                             style={{ width: '6lvh' }}
                             className=''
                             loading='lazy'
                             src='/assets/logo.webp' />
-                        {first_name ? <small className='mx-3 shadow-sm p-2 rounded text-center text-warning'>{t('user_name')}{first_name}</small> : ''}
+                        {first_name ? <small className='mx-3 shadow-sm p-2 rounded text-center text-warning '>{first_name} {last_name}</small> : ''}
                     </Link>
 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -212,9 +127,15 @@ function Header() {
 
                             <li className="nav-item font-bold hover-shadow-lg transition-all">
                                 <Link className="nav-link active" aria-current="page" href="/">{t('home')}</Link>
-                            </li>
 
-                            <li className="nav-item font-bold hover-shadow-lg transition-all dropdown">
+                            </li>
+                            {token &&
+                                <li className="nav-item font-bold hover-shadow-lg transition-all">
+                                    <Link className="nav-link" aria-current="page" href={selectedLangWithSlace + "/dashboard"}>{t('dashboard')}</Link>
+                                </li>
+                            }
+
+                            <li className="nav-item font-bold hover-shadow-lg transition-all dropdown" >
                                 <CustomNavbar navLavel={t('our_pooja')} data={typeOfPooja} />
                             </li>
 
@@ -223,8 +144,6 @@ function Header() {
                             </li>
 
                             <li className="nav-item font-bold hover-shadow-lg transition-all">
-                                {/* <CustomNavbar navLavel={s('16_sanskar')} data={sixteen_sanskar} />
-                                 */}
                                 <Link className="nav-link " href={selectedLangWithSlace + "/sanskar"} tabIndex="-1" aria-disabled="true">{s('16_sanskar')}</Link>
 
                             </li>

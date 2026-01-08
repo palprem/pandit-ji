@@ -13,6 +13,7 @@ import Image from '@/components/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHouseChimney, faPhone } from '@fortawesome/free-solid-svg-icons'
 import KnowMore from '@/components/KnowMore'
+import Streper from '@/components/image/streper'
 
 function GauSeva() {
   const f = useTranslations('footer');
@@ -21,6 +22,7 @@ function GauSeva() {
 
   return (
     <>
+    <Streper/>
       <div style={{ backgroundImage: "url(/assets/gau/home-bg.webp)", minHeight: "70lvh" }}>
 
         <ContainerWapper>
@@ -159,7 +161,7 @@ function GauSeva() {
           <RowWrapper>
             <div className='m-5 col-md-6 col-12'>
 
-              <KnowMore />
+              <KnowMore type='gau seva' />
             </div>
             <div className='col-md-6 col-12'>
 

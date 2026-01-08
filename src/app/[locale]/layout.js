@@ -10,6 +10,7 @@ import { getMessages } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -26,15 +27,47 @@ const playfair = Playfair_Display({
   weight: ["400", "700"],
 });
 
-export const metadata = {
-  title: {
-    default: "Raja Shastri",
-    template: "%s - Raja Shastri",
-  },
+// export const metadata = {
+//   title: {
+//     default: "Raja Shastri",
+//     template: "%s - Raja Shastri",
+//   },
 
-  twitter: {
-    card: "summary_large_image",
-    site: "@fitlife",
+//   twitter: {
+//     card: "summary_large_image",
+//     site: "@fitlife",
+//   },
+// };
+
+
+export const metadata = {
+  title: "Raja Shastri |Ashram Construction | Puja, Gau Puja, 16 Sanskar, Vastu, Gau Seva",
+  description:
+    "Ashram Construction services including Gau Puja, 16 Sanskar, Vastu Shastra, Gau Seva, and Water Service. Trusted spiritual and traditional construction solutions.",
+  keywords: [
+    "Ashram Construction",
+    "Gau Puja",
+    "16 Sanskar",
+    "Vastu Shastra",
+    "Gau Seva",
+    "Water Service",
+    "Spiritual Construction",
+    "Ashram Builder India",
+    "Kashi Vishwanath",
+    "Vedic Jyotish",
+    "Anusthan Kendra",
+    "Acharya Gopal Sharan Pandey Ji",
+    "Raja Shastri",
+    "Pandit Raja Shastri",
+    "Puja",
+  ],
+  openGraph: {
+    title: "Ashram Construction Services",
+    description:
+      "We provide Ashram Construction, Gau Puja, 16 Sanskar, Vastu, Gau Seva & Water Service.",
+    url: "https://raja-shastri.vercel.app",
+    siteName: "Ashram Construction",
+    type: "website",
   },
 };
 

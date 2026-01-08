@@ -4,18 +4,13 @@ import Image from '@/components/image'
 import '../../../style/card.css';
 import ContainerWapper from '@/components/card/container-wapper';
 import RowWrapper from '@/components/card/row-wrapper';
-import Button from '@/components/button';
 import CardWrapper from '@/components/card/card-wrapper';
 import { SmallTitle, SubTitle, Title } from '@/components/typography/title';
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import MutedText from '@/components/typography/mutedText';
 import StrongTitle from '@/components/typography/strongTitle';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faUserTie } from '@fortawesome/free-solid-svg-icons';
-import Input from '@/components/input';
-import { faTex } from '@fortawesome/free-brands-svg-icons';
 import KnowMore from '@/components/KnowMore';
+import Streper from '@/components/image/streper';
 
 function Sanskar() {
 
@@ -24,7 +19,8 @@ function Sanskar() {
 
   return (
     <div>
-      <CardWrapper style='card-body-2'>
+      <Streper  title={p('title')}/>
+      <CardWrapper style='card-body-2 mt-5' >
         <ContainerWapper>
           <RowWrapper>
             <div className="col-md-6 col-12">
@@ -84,7 +80,7 @@ function Sanskar() {
             <div className="col-md-4 col-12 " >
 
               <div className=' card-body '>
-                <div className=' card-body-2 '>
+                {/* <div className=' card-body-2 '>
                   <SubTitle className='border-4 border-start border-dark p-2 my-3 '>Benefits of Vastu</SubTitle>
                   <div className="mx-1 mx-md-4  pb-3">
                     <StrongTitle>
@@ -93,10 +89,10 @@ function Sanskar() {
                       </MutedText>
                     </StrongTitle>
                   </div>
-                </div>
+                </div> */}
 
                 <div className='my-4 card-body-2'>
-                 <KnowMore/>
+                  <KnowMore type='16 Sanskar' />
                 </div>
               </div>
             </div>

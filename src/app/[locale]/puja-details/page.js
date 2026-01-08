@@ -7,10 +7,10 @@ import ContainerWapper from '@/components/card/container-wapper';
 import RowWrapper from '@/components/card/row-wrapper';
 import Button from '@/components/button';
 import CardWrapper from '@/components/card/card-wrapper';
-import { SmallTitle, SubTitle, Title } from '@/components/typography/title';
+import { SubTitle, Title } from '@/components/typography/title';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { benifits, poojaItems, } from '@/utils/poojaConstant';
+import { poojaItems, } from '@/utils/poojaConstant';
 import FoundLanguage from '@/utils/foundLanguage';
 import { useSearchParams } from "next/navigation";
 import MutedText from '@/components/typography/mutedText';
@@ -28,8 +28,12 @@ function PoojaBooking() {
 
     const items = poojaItems(selectedLangWithSlace, name);
     const [data] = items?.filter(item => item.id == id) ?? '';
+    let p;
+    if (items.length) {
+        p = useTranslations(name);
+    } else p = (key) => key
 
-    const p = useTranslations(name);
+
     const m = useTranslations('poojaBenifits');
     const b = useTranslations('buttons');
     const f = useTranslations('footer');
@@ -69,7 +73,7 @@ function PoojaBooking() {
 
                         <div className="col-md-6 col-12 text-center ">
                             <Image
-                                src={`/assets/puja/${name}/${data.id}.png`}
+                                src={`/assets/puja/${name}/${data?.id}.png`}
                                 alt={name + " Masked"}
                                 className=" rounded-top-5  "
                                 style={{ height: "36rem" }}
@@ -104,17 +108,14 @@ function PoojaBooking() {
                 </RowWrapper>
             </ContainerWapper>
 
-
+            <hr />
             <ContainerWapper>
                 <CardWrapper style='card-body-2'>
                     <RowWrapper>
                         <div className='m-5 col-md-6 col-12'>
-
-                           <KnowMore/>
+                            <KnowMore type={name +' Puja'} />
                         </div>
-                        <div className='col-md-6 col-12'>
 
-                        </div>
                     </RowWrapper>
                 </CardWrapper>
             </ContainerWapper>

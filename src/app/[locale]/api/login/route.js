@@ -28,7 +28,7 @@ export async function POST(req) {
 
         // 3 compare password
         const isMatch = await bcrypt.compare(password, user.password);
-        
+
         if (!isMatch) {
             return Response.json({ error: 'Invalid credentials' }, { status: 400 });
         }
@@ -36,7 +36,7 @@ export async function POST(req) {
         // 4 generate token
         const token = await generateJWT(user);
 
-        return Response.json({ message: "Login successfully", user: { id: user.user_id, first_name: user.first_name, email_id: user.email_id, role: user.role, token } }, { status: 200 });
+        return Response.json({ message: "Login successfully", user: { id: user.user_id, first_name: user.first_name, last_name: user.last_name, email_id: user.email_id, role: user.role, token } }, { status: 200 });
 
     } catch (error) {
         console.error(error);

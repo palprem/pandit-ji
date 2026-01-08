@@ -519,7 +519,7 @@ export const poojaItems = (selectedLangWithSlace, key) => {
         ]
 
 
-        default: '';
+        default: return [];
 
     }
 }

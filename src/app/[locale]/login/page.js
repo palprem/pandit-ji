@@ -119,18 +119,17 @@ function Login() {
                         />
                     </div>
 
-                    {/* <div className='text-center'>
-                        <label className="form-check-label " htmlFor="form2Example3">
-                            If you don&apos;t have account already? <Link href={selectedLangWithSlace + '/registration'}>Register</Link>
-                        </label>
-                    </div> */}
+                   
 
                 </form>
 
             </div>
 
             <div className="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+<div className='mx-5'>
                 <WellcomeContent />
+
+</div>
             </div>
         </FormWrapper>
     )

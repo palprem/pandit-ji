@@ -90,7 +90,7 @@ function ParentFooter() {
             </section>
             <div className="text-center p-4 text-light border-top border-black" >
                 © 2021 Copyright :
-                <Link className="text-light text-reset fw-bold" href="http://localhost:3000/en/">{g('name')}</Link>
+                <p className="text-light text-reset fw-bold" >{g('name')}</p>
             </div>
         </footer>
     )

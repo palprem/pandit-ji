@@ -135,7 +135,7 @@ export const vastuConstant = (key) => {
             },
         ];
 
-        default: return '';
+        default: return [];
 
     }
 }

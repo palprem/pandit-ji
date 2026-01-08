@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const registerUser = createAsyncThunk("auth/registerUser", async (userData, thankApi) => {
     try {
-        const response = await api.post('/register', userData);
+        const response = await api.post('register', userData);
         return response.data;
     } catch (error) {
         return thankApi.rejectWithValue(error.response?.data);
@@ -13,7 +13,7 @@ export const registerUser = createAsyncThunk("auth/registerUser", async (userDat
 
 export const loginUser = createAsyncThunk("auth/loginUser", async (userData, thankApi) => {
     try {
-        const response = await api.post('/login', userData);
+        const response = await api.post('login', userData);
         return response.data;
     } catch (error) {
         return thankApi.rejectWithValue(error.response?.data);
@@ -39,7 +39,7 @@ const authSlice = createSlice({
             state.user = {};
             state.data = null;
             state.error = null;
-             state.registered=false
+            state.registered = false
         }
     },
     extraReducers: (builder) => {
