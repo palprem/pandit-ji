@@ -62,7 +62,7 @@ function Sanskar() {
                             alt={`Masked${i + 1}`}
                             className=" w-100 h-100 card-img-top border-0 rounded-0"
                           />
-                          <div className="card-body">
+                          <div className="card-body py-4">
                             <SubTitle className="card-title">{i + 1 + ' - ' + p(String(i + 1))}</SubTitle>
                             <MutedText className="card-text">{p(i + 1 + '_')}</MutedText>
                           </div>

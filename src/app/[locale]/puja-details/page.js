@@ -54,7 +54,7 @@ function PoojaBooking() {
                                         <CardWithVideo videoId='VyPGdBxzdhQ' />
                                     </div>
                                     <div className='col-md-6 col-12'>
-                                        <p className=''>
+                                        <p className='pt-4 pt-md-0'>
                                             <FontAwesomeIcon icon={faHouseChimney} />
                                             {f('add_1')}</p>
                                         <p className=''>
@@ -72,12 +72,14 @@ function PoojaBooking() {
                         </div>
 
                         <div className="col-md-6 col-12 text-center ">
-                            <Image
-                                src={`/assets/puja/${name}/${data?.id}.png`}
-                                alt={name + " Masked"}
-                                className=" rounded-top-5  "
-                                style={{ height: "36rem" }}
-                            />
+                            <div className='my-5'>
+                                <Image
+                                    src={`/assets/puja/${name}/${data?.id}.png`}
+                                    alt={name + " Masked"}
+                                    className=" rounded-top-5  "
+                                    style={{ height: "36rem" }}
+                                />
+                            </div>
                         </div>
                     </RowWrapper>
 
@@ -112,8 +114,8 @@ function PoojaBooking() {
             <ContainerWapper>
                 <CardWrapper style='card-body-2'>
                     <RowWrapper>
-                        <div className='m-5 col-md-6 col-12'>
-                            <KnowMore type={name +' Puja'} />
+                        <div className='m-md-5 col-md-6 col-12'>
+                            <KnowMore type={name + ' Puja'} />
                         </div>
 
                     </RowWrapper>

@@ -5,7 +5,7 @@ import '../../style/card.css';
 import CustomImage from '../image';
 import { useTranslations } from 'next-intl';
 
-export default function SimpleCard({ title = '', text = '', src = '' }) {
+export default function SimpleCard({ title = '', text = '', src = '', href='' }) {
     const t = useTranslations('serviceCards');
 
     return (
@@ -18,7 +18,8 @@ export default function SimpleCard({ title = '', text = '', src = '' }) {
                 />
                 <h5 className="card-title  mb-4">{t(title)}</h5>
                 <MutedText className=' my-2 mb-4' >{t(text)}</MutedText>
-                <MutedText ><Link href='' className='card-link text-warning '>READ MORE</Link></MutedText>
+                <MutedText >
+                    <Link href={href} className='card-link text-warning '>{t('read_more')}</Link></MutedText>
             </div>
         </div>
     )

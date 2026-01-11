@@ -63,7 +63,7 @@ function GauSeva() {
                     </div>
                     <div className='col-md-6 col-12'>
 
-                      <p className=''>
+                      <p className='mt-4'>
                         <FontAwesomeIcon icon={faEnvelope} />
                         {f('add_2')}
                       </p>
@@ -74,7 +74,7 @@ function GauSeva() {
                 </div>
 
                 <Link href={''}>
-                  <Button label={b('donate')} className='w-25  mt-3' />
+                  <Button label={b('donate')} className='' />
                 </Link>
               </div>
             </div>
@@ -142,38 +142,38 @@ function GauSeva() {
 
 
       <div className='card-body-2 '>
-        <div className='p-5'>
-          <RowWrapper className='p-5'>
-            <div className='col-md-6 col-12'>
-              <div className='p-4 card border-0'>
-                <Image
-                  loading='lazy'
-                  decoding="async"
-                  src="/assets/gau/4.png"
-                  alt="astrology image"
-                  className="as-service-img img-responsive w-100 shadow" />
+      <div className='p-md-5 '>
+          <RowWrapper className='p-md-5 '>
+          <div className='col-md-6 col-12'>
+            <div className='p-4 card border-0'>
+              <Image
+                loading='lazy'
+                decoding="async"
+                src="/assets/gau/4.png"
+                alt="astrology image"
+                className="as-service-img img-responsive w-100 shadow" />
 
-              </div>
             </div>
-            <div className='col-md-6 col-12'>
-              <div className='p-4 card border-0' >
-                <Image
-                  loading='lazy'
-                  decoding="async"
-                  src="/assets/gau/5.jpg"
-                  alt="astrology image"
-                  className="as-service-img img-responsive w-100 shadow" />
+          </div>
+          <div className='col-md-6 col-12'>
+            <div className='p-4 card border-0' >
+              <Image
+                loading='lazy'
+                decoding="async"
+                src="/assets/gau/5.jpg"
+                alt="astrology image"
+                className="as-service-img img-responsive w-100 shadow" />
 
-              </div>
             </div>
-          </RowWrapper>
-        </div>
+          </div>
+        </RowWrapper>
+      </div>
       </div>
 
       <ContainerWapper>
         <CardWrapper style='card-body-2 my-5'>
           <RowWrapper>
-            <div className='m-5 col-md-6 col-12'>
+            <div className='m-md-5 col-md-6 col-12'>
 
               <KnowMore type='gau seva' />
             </div>

@@ -1,3 +1,4 @@
+'use client'
 import '@/style/card.css';
 import '@/style/carousel.css';
 import styles from "./page.module.css";
@@ -16,6 +17,7 @@ import { allSevices, chooseUs, homeCarosel, serviceCards } from '@/utils/homeCon
 import InfiniteScrollAnimation from '@/components/infiniteScroll';
 import { SubTitle, Title } from '@/components/typography/title';
 import Carousels from '@/components/carousel';
+import FoundLanguage from '@/utils/foundLanguage';
 
 
 export default function Home() {
@@ -23,6 +25,7 @@ export default function Home() {
   const s = useTranslations('serviceCards');
   const e = useTranslations('events');
   const c = useTranslations('chooseUs');
+    const { selectedLangWithSlace } = FoundLanguage()
 
   return (
     <div className={styles.page + ' '} >
@@ -66,6 +69,7 @@ export default function Home() {
                     src={item.src}
                     title={item.title}
                     text={item.text}
+                    href={selectedLangWithSlace+item.href}
                   />
                 </div>
               })
@@ -75,18 +79,15 @@ export default function Home() {
       </CardWrapper>
 
 
-      <CardWrapper style='card-body-2 p-5'>
+      <CardWrapper style='card-body-2 p-md-5'>
         <SubTitle className='text-warning text-center'>{'ॐ त्र्यंबकं यजामहे सुगंधिं पुष्टिवर्धनम्। उर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय माऽमृतात्॥'}</SubTitle>
 
         <Title className=' text-center'>{e('title')}</Title>
         <RowWrapper>
-
           <Events />
-
         </RowWrapper>
 
       </CardWrapper>
-
 
 
       <CardWrapper >

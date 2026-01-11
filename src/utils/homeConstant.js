@@ -3,49 +3,57 @@ export const serviceCards = [
         id: 1,
         title: 'puja',
         text: "pooja_details",
-        src: '/assets/services/puja.png',
+        src: '/assets/services/worship.png',
+        href: "/puja-lists/mahadev"
     },
     {
         id: 2,
         title: 'gau_seva',
         text: "gau_details",
         src: '/assets/services/cow.png',
+        href: "/gau-seva"
     },
     {
         id: 3,
         title: '16_sanskar',
         text: "sanskar_details",
         src: '/assets/services/16.png',
+        href: "/sanskar"
     },
     {
         id: 4,
         title: 'vastu',
         text: "vastu_details",
         src: '/assets/services/vastu.png',
+        href: "/vastu/residential",
     },
     {
         id: 5,
         title: 'anna',
         text: "anna_details",
         src: '/assets/services/food.png',
+        href: ""
     },
     {
         id: 6,
         title: 'ashram_constraction',
         text: "asram_details",
         src: '/assets/services/home.png',
+        href: ""
     },
     {
         id: 7,
         title: 'kashi_visvanath',
         text: "kashi_visvanath_details",
         src: '/assets/services/guru.png',
+        href: ""
     },
     {
         id: 8,
         title: 'water',
         text: "water_details",
         src: '/assets/services/water.png',
+        href: ""
     },
 ];
 

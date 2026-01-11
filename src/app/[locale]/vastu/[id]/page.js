@@ -26,11 +26,11 @@ function VastuDetails({ params }) {
     return (
         <>
             <Streper title={r('title')} />
-            <CardWrapper style=''>
+            <CardWrapper >
                 <ContainerWapper>
                     <RowWrapper>
                         <div className='col-md-8 col-12'>
-                            <div className="card-body ">
+                            <div className=" ">
                                 <div className='d-block '>
                                     <Image
                                         src={`/assets/vastu/${name}.png`}
