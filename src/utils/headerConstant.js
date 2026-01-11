@@ -1,12 +1,9 @@
 import { useTranslations } from 'next-intl';
 
 
-const t = useTranslations('Navbar');
-const b = useTranslations('buttons');
 const p = useTranslations('navbar_pooja');
 const v = useTranslations('navbar_vastu');
 const kar = useTranslations('navbar_16_sanskar');
-const s = useTranslations('serviceCards');
 
 
 export const typeOfPooja = [
@@ -65,7 +62,7 @@ export const typeOfVastu = [
     },
     {
         title: v('industrial_vastu'),
-        src: '/assets/vastu/industrial.png',
+        src: '/assets/vastu/industrial-vastu.png',
         href: `${selectedLangWithSlace}/vastu/industrial`
     },
     {
