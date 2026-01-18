@@ -98,7 +98,7 @@ function PoojaBooking() {
                 <RowWrapper className=''>
                     {Array.from({ length: 4 }, (_, i) => {
                         return <div key={i} className=" col-md-3 col-sm-6 col-12 mb-3  " >
-                            <div className='card shadow card-adjust-7 border-0 p-2 '>
+                            <div className='card shadow card-adjust-7 border-0 p-2 liner-animation'>
                                 <div className="card-body rounded py-5" style={{ backgroundColor: "#f6f6f6" }}>
                                     <SubTitle className=' text-left'>{m(String(i + 1))}</SubTitle>
                                     <p className="card-text">{m(i + 1 + "_")}</p>

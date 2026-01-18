@@ -9,12 +9,12 @@ function CardWithDetails({ src, title = '', subTitle = '', href = '', buttonLabl
     const b = useTranslations('buttons');
 
     return (
-        <div className="col-md-4 mb-5">
-            <div className="card rounded-top-5 shadow">
+        <div className="col-md-4 mb-5 ">
+            <div className="card rounded-top-5 shadow pb-4">
 
                 <Image
-                    className="img-fluid rounded-top-5  card-img-fixed "
-                    alt="100%x280"
+                    className="img-fluid rounded-top-5 card-img-fixed "
+                    alt={"100%x280" + title}
                     src={src}
                 />
                 <div className="card-body">

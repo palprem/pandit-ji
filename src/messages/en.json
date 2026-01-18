@@ -94,7 +94,7 @@
     "24": "24/7 Animal Rescue & Medical Care State-of-the-art Veterinary Facilities Community Outreach for Animal Welfare"
   },
   "serviceCards": {
-    "read_more":"READ MORE",
+    "read_more": "READ MORE",
     "serviceTitle": "Our Services",
     "vadik_gurukul": "Vedic Gurukul",
     "anna": "Annakshetra (Sadhu Seva)",
@@ -553,7 +553,7 @@
     "16_": "Antyeshti Sanskar is the final rite of death, performed after one's death, involving cremation and purifying the soul. It is important for Ayurvedic wisdom, as it emphasizes the importance of care for the body until the last moment. Antyeshti also has spiritual significance, as it releases the soul from karmic bondage and guides the departed to peace and liberation. Modern funeral processions are often dictated by community customs, but Antyeshti reminds parents to respect the body and the sacredness of life's end."
   },
   "poojaBenifits": {
-    "0":"Benefits of Vastu",
+    "0": "Benefits of Vastu",
     "1": "Spiritual Growth and Inner Peace",
     "1_": "Pooja helps connect the individual with divine energy, creating inner peace and spiritual awareness. Regular worship calms the mind, reduces negative thoughts, and strengthens faith. It encourages self-reflection, devotion, and gratitude, leading to emotional balance and a deeper sense of purpose in life.",
     "2": "Mental and Emotional Well-Being",
@@ -576,6 +576,19 @@
     "4": "Tell us what you want to talk about",
     "6": "Date",
     "5": "Submit"
+  },
+  "donate": {
+    "title":"You can contribute to the service projects of Kashi Vishwanath Vedic Astrology, Vastu & Ritual Center through the QR code.",
+    "1": "Gau Seva",
+    "1_": "Your donation for Gau Seva supports cow protection, nourishment, medical care, and proper shelter",
+    "2": "Vaidik Gurukul",
+    "2_": "Donation for Vaidik Gurukul supports values, education, teacher service, and students' bright future",
+    "3": "Poor Children",
+    "3_": "Your donation helps poor children with education, nutrition, clothing, and a brighter life",
+    "4": "Bhandara",
+    "4_": "Donation for Bhandara helps provide food to the hungry with dignity and compassion",
+    "5": "Water Service",
+    "5_": "Your donation for water service provides clean drinking water, saves lives, and earns blessings"
   },
   "footer": {
     "social": "Conatct us social on media:",

@@ -1,0 +1,46 @@
+.head-card {
+    margin: 3rem;
+}
+
+.single-card {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.custom-card {
+    color: transparent;
+    /* height: 100%; */
+    /* padding: 27px; */
+    /* border-radius: 11%; */
+    background-color: #f2f6fe;
+}
+
+.custom-card-img {
+    color: transparent;
+    height: 100%;
+    padding: 27px;
+    border-radius: 11%;
+}
+
+  .image-donate-banner {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("/assets/carousel/carousel-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 110px;
+    /* padding-bottom: 110px; */
+  }
+
+@media (max-width: 600px) {
+
+    .head-card {
+        margin: auto;
+    }
+
+
+    .single-card {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

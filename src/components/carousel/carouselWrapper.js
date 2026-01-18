@@ -2,7 +2,6 @@ import React from 'react'
 import { useTranslations } from 'next-intl';
 
 function CarouselWrapper({ children, active=0 }) {
-  const t = useTranslations('HomePageCaroselTitle');
   const b = useTranslations('buttons');
   
     return (
