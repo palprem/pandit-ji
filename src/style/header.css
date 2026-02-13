@@ -104,3 +104,38 @@
     padding-top: 110px;
     padding-bottom: 110px;
   }
+
+
+
+  
+.menu {
+    display: flex;
+    list-style: none;
+    position: relative;
+}
+
+.menu li {
+    text-decoration: none;
+    letter-spacing: 1px;
+    position: relative;
+    padding: 10px 0;
+}
+
+/* Elastic underline */
+.menu li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background: #ffc107;
+    transition:
+        width 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+        left 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.menu a:hover::after {
+    width: 100%;
+    left: 0;
+}

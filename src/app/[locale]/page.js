@@ -25,7 +25,7 @@ export default function Home() {
   const s = useTranslations('serviceCards');
   const e = useTranslations('events');
   const c = useTranslations('chooseUs');
-    const { selectedLangWithSlace } = FoundLanguage()
+  const { selectedLangWithSlace } = FoundLanguage()
 
   return (
     <div className={styles.page + ' '} >
@@ -69,7 +69,7 @@ export default function Home() {
                     src={item.src}
                     title={item.title}
                     text={item.text}
-                    href={selectedLangWithSlace+item.href}
+                    href={selectedLangWithSlace + item.href}
                   />
                 </div>
               })

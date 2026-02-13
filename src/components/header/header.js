@@ -123,7 +123,7 @@ function Header() {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0 menu">
 
                             <li className="nav-item font-bold hover-shadow-lg transition-all">
                                 <Link className="nav-link active" aria-current="page" href="/">{t('home')}</Link>
